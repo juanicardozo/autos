@@ -219,11 +219,18 @@ let autos = {
 
             return arrayFiltrado;
         },
-        porMarca: function(marca) {
-​
+        porMarca: function(marca)
+        {
+​           let arrayFiltrado = this.lista.filter(function(elemento)
+                                {
+                                    return elemento.marca == marca;
+                                })
+            
+                                return arrayFiltrado;
         },
-        porAnio: function() {
-​
+        porAnio: function()
+        {
+
         }
 }
 ​
